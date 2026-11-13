@@ -5,8 +5,8 @@ A high-performance, modern static frontend website redesign for **Ascencia Malta
 ---
 
 ## 🚀 Live Demo & Repository
-* **Live Deployment:** [Add your Vercel / Netlify URL here after deploying]
-* **GitHub Repository:** [Add your GitHub repository URL here]
+* **Live Deployment:** [https://ascencia-malta-nine.vercel.app/](https://ascencia-malta-nine.vercel.app/)
+* **GitHub Repository:** [https://github.com/shagun199/ascencia-malta-task](https://github.com/shagun199/ascencia-malta-task)
 
 ---
 
