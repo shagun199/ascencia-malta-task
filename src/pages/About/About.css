@@ -196,6 +196,7 @@
 .milestones-header h3 {
   font-size: var(--font-size-lg);
   color: var(--color-primary);
+  font-weight: 700;
 }
 
 .milestones-timeline {
@@ -205,9 +206,17 @@
 }
 
 .milestone-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: var(--space-5);
   align-items: flex-start;
-  gap: var(--space-4);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.milestone-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .milestone-badge {
@@ -215,24 +224,37 @@
   color: var(--color-gold-light);
   font-size: 0.72rem;
   font-weight: 700;
-  padding: 0.35rem 0.65rem;
+  height: 28px;
+  width: 84px;
   border-radius: var(--radius-sm);
-  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  border: 1px solid rgba(207, 161, 68, 0.25);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 1px;
+}
+
+.milestone-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
 .milestone-detail h4 {
   font-size: var(--font-size-sm);
   color: var(--color-primary);
-  margin-bottom: 2px;
   font-weight: 700;
+  line-height: 1.35;
 }
 
 .milestone-detail p {
   font-size: var(--font-size-xs);
   color: var(--color-text-secondary);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* --------------------------------------------------------------------------
